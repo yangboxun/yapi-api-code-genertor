@@ -12,7 +12,6 @@
         "<node_internals>/**"
       ],
       "program": "${workspaceFolder}\\dist\\cli.js",
-      // "args": ["--url","https://yapi.pangutech.dev","--token","307750e18d93ef64e75fffc844b031a518f78783827719946795bee11a714530"], // 命令参数
       "cwd": "${workspaceFolder}",
       "console": "integratedTerminal" // 不使用默认值 internalTerminal。 
     }
