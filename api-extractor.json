@@ -1,0 +1,26 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/api-extractor/v7/api-extractor.schema.json",
+    "mainEntryPointFilePath": "./dist/index.d.ts",
+    "dtsRollup": {
+      "enabled": true,
+      "untrimmedFilePath": "./dist/yapi-api-generator.d.ts"
+    },
+    "apiReport": {
+      "enabled": true,
+      "reportFolder": "<projectFolder>/temp/"
+    },
+    "docModel": {
+      "enabled": true
+    },
+    "tsdocMetadata": {
+      "enabled": false
+    },
+    "messages": {
+      "extractorMessageReporting": {
+        "default": {
+          "logLevel": "none"
+        }
+      }
+    }
+  }
+  

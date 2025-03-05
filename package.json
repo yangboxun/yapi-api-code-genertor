@@ -1,0 +1,55 @@
+{
+  "name": "yapi-api-generator",
+  "version": "1.0.5",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.mjs.js",
+  "bin": {
+    "yapi-api-gen": "dist/cli.js"
+  },
+  "types": "dist/yapi-api-generator.d.ts",
+  "files": [
+    "dist/*.js",
+    "dist/*.mjs",
+    "dist/*.cjs",
+    "dist/yapi-api-generator.d.ts"
+  ],
+  "scripts": {
+    "build": "rimraf dist && rollup -c rollup.config.mjs && npm run build:dts",
+    "build:watch": "rollup -c -w",
+    "build:dts": "api-extractor run --local",
+    "dev": "nodemon --watch dist --exec node dist/index.cjs.js",
+    "start": "npm run build:watch"
+  },
+  "author": "yangboxun",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@microsoft/api-extractor": "^7.48.0",
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/axios": "^0.14.4",
+    "@types/ejs": "^3.1.5",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.9.1",
+    "nodemon": "^3.1.9",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.27.3",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@pangu/core": "^1.0.90",
+    "axios": "^1.7.7",
+    "chalk": "^4.1.2",
+    "change-case": "^5.4.4",
+    "commander": "^12.1.0",
+    "ejs": "^3.1.10",
+    "inquirer": "^8.2.0",
+    "json-schema-to-typescript": "^15.0.3",
+    "prettier": "^3.3.3"
+  }
+}

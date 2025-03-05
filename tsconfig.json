@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",           // 更高的目标版本
+    "module": "ESNext",           // 输出为 ES 模块
+    "strict": true,               // 启用严格模式
+    "outDir": "./dist",           // 编译输出目录
+    "skipLibCheck": true,         // 跳过库检查
+    "moduleResolution": "node",   // Node.js 模块解析
+    "declaration": true,          // 生成声明文件
+    "declarationDir": "./dist",
+    "esModuleInterop": true,      // 支持 CommonJS 和 ES 模块互操作
+    "allowSyntheticDefaultImports": true,    
+  },
+  "include": ["src/**/*"]
+}
