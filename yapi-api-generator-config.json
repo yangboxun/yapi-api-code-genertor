@@ -1,6 +1,0 @@
-{
-  "baseUrl": "https://yapi.pangutech.dev",
-  "token": "307750e18d93ef64e75fffc844b031a518f78783827719946795bee11a714530",
-  "output": "./apis/methods.js",
-  "targetLanguage": "javascript"
-}

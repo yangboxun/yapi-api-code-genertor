@@ -161,20 +161,20 @@
     }
   },
   "kind": "Package",
-  "canonicalReference": "yapi-api-generator!",
+  "canonicalReference": "yapi-api-code-generator!",
   "docComment": "",
-  "name": "yapi-api-generator",
+  "name": "yapi-api-code-generator",
   "preserveMemberOrder": false,
   "members": [
     {
       "kind": "EntryPoint",
-      "canonicalReference": "yapi-api-generator!",
+      "canonicalReference": "yapi-api-code-generator!",
       "name": "",
       "preserveMemberOrder": false,
       "members": [
         {
           "kind": "Interface",
-          "canonicalReference": "yapi-api-generator!ApiInterface:interface",
+          "canonicalReference": "yapi-api-code-generator!ApiInterface:interface",
           "docComment": "",
           "excerptTokens": [
             {
@@ -189,7 +189,7 @@
           "members": [
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#_id:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#_id:member",
               "docComment": "/**\n * 接口 ID\n */\n",
               "excerptTokens": [
                 {
@@ -216,7 +216,7 @@
             },
             {
               "kind": "IndexSignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface:index(1)",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface:index(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -260,7 +260,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#add_time:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#add_time:member",
               "docComment": "/**\n * 创建时间（unix时间戳）\n */\n",
               "excerptTokens": [
                 {
@@ -287,7 +287,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#catid:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#catid:member",
               "docComment": "/**\n * 所属分类 id\n */\n",
               "excerptTokens": [
                 {
@@ -314,7 +314,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#markdown:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#markdown:member",
               "docComment": "/**\n * 接口备注\n */\n",
               "excerptTokens": [
                 {
@@ -341,7 +341,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#method:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#method:member",
               "docComment": "/**\n * 请求方式，HEAD、OPTIONS 处理与 GET 相似，其余处理与 POST 相似\n */\n",
               "excerptTokens": [
                 {
@@ -351,7 +351,7 @@
                 {
                   "kind": "Reference",
                   "text": "Method",
-                  "canonicalReference": "yapi-api-generator!~Method:enum"
+                  "canonicalReference": "yapi-api-code-generator!~Method:enum"
                 },
                 {
                   "kind": "Content",
@@ -369,7 +369,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#path:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#path:member",
               "docComment": "/**\n * 请求路径\n */\n",
               "excerptTokens": [
                 {
@@ -396,7 +396,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#project_id:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#project_id:member",
               "docComment": "/**\n * 所属项目 id\n */\n",
               "excerptTokens": [
                 {
@@ -423,7 +423,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#req_body_form:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#req_body_form:member",
               "docComment": "/**\n * `req_body_type = form` 时的请求内容\n */\n",
               "excerptTokens": [
                 {
@@ -442,7 +442,7 @@
                 {
                   "kind": "Reference",
                   "text": "ReqBodyForm",
-                  "canonicalReference": "yapi-api-generator!~ReqBodyForm:interface"
+                  "canonicalReference": "yapi-api-code-generator!~ReqBodyForm:interface"
                 },
                 {
                   "kind": "Content",
@@ -464,7 +464,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#req_body_is_json_schema:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#req_body_is_json_schema:member",
               "docComment": "/**\n * `req_body_type = json` 时是否为 json schema\n */\n",
               "excerptTokens": [
                 {
@@ -491,7 +491,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#req_body_other:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#req_body_other:member",
               "docComment": "/**\n * `req_body_type = json` 时的请求内容\n */\n",
               "excerptTokens": [
                 {
@@ -518,7 +518,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#req_body_type:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#req_body_type:member",
               "docComment": "/**\n * 仅 POST：请求内容类型。为 text, file, raw 时不必特殊处理。\n */\n",
               "excerptTokens": [
                 {
@@ -528,7 +528,7 @@
                 {
                   "kind": "Reference",
                   "text": "RequestBodyType",
-                  "canonicalReference": "yapi-api-generator!~RequestBodyType:enum"
+                  "canonicalReference": "yapi-api-code-generator!~RequestBodyType:enum"
                 },
                 {
                   "kind": "Content",
@@ -546,7 +546,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#req_headers:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#req_headers:member",
               "docComment": "/**\n * 请求头\n */\n",
               "excerptTokens": [
                 {
@@ -565,7 +565,7 @@
                 {
                   "kind": "Reference",
                   "text": "Required",
-                  "canonicalReference": "yapi-api-generator!~Required_2:enum"
+                  "canonicalReference": "yapi-api-code-generator!~Required_2:enum"
                 },
                 {
                   "kind": "Content",
@@ -587,7 +587,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#req_params:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#req_params:member",
               "docComment": "/**\n * 路径参数\n */\n",
               "excerptTokens": [
                 {
@@ -606,7 +606,7 @@
                 {
                   "kind": "Reference",
                   "text": "ReqParams",
-                  "canonicalReference": "yapi-api-generator!~ReqParams:interface"
+                  "canonicalReference": "yapi-api-code-generator!~ReqParams:interface"
                 },
                 {
                   "kind": "Content",
@@ -628,7 +628,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#req_query:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#req_query:member",
               "docComment": "/**\n * 仅 GET：请求串\n */\n",
               "excerptTokens": [
                 {
@@ -647,7 +647,7 @@
                 {
                   "kind": "Reference",
                   "text": "ReqQuery",
-                  "canonicalReference": "yapi-api-generator!~ReqQuery:interface"
+                  "canonicalReference": "yapi-api-code-generator!~ReqQuery:interface"
                 },
                 {
                   "kind": "Content",
@@ -669,7 +669,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#res_body_is_json_schema:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#res_body_is_json_schema:member",
               "docComment": "/**\n * `res_body_type = json` 时是否为 json schema\n */\n",
               "excerptTokens": [
                 {
@@ -696,7 +696,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#res_body_type:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#res_body_type:member",
               "docComment": "/**\n * 返回数据类型\n */\n",
               "excerptTokens": [
                 {
@@ -706,7 +706,7 @@
                 {
                   "kind": "Reference",
                   "text": "ResponseBodyType",
-                  "canonicalReference": "yapi-api-generator!~ResponseBodyType:enum"
+                  "canonicalReference": "yapi-api-code-generator!~ResponseBodyType:enum"
                 },
                 {
                   "kind": "Content",
@@ -724,7 +724,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#res_body:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#res_body:member",
               "docComment": "/**\n * 返回数据\n */\n",
               "excerptTokens": [
                 {
@@ -751,7 +751,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#status:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#status:member",
               "docComment": "/**\n * 状态\n */\n",
               "excerptTokens": [
                 {
@@ -778,7 +778,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#tag:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#tag:member",
               "docComment": "/**\n * 标签列表\n */\n",
               "excerptTokens": [
                 {
@@ -805,7 +805,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#title:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#title:member",
               "docComment": "/**\n * 接口名称\n */\n",
               "excerptTokens": [
                 {
@@ -832,7 +832,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#uid:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#uid:member",
               "docComment": "/**\n * 创建人 ID\n */\n",
               "excerptTokens": [
                 {
@@ -859,7 +859,7 @@
             },
             {
               "kind": "PropertySignature",
-              "canonicalReference": "yapi-api-generator!ApiInterface#up_time:member",
+              "canonicalReference": "yapi-api-code-generator!ApiInterface#up_time:member",
               "docComment": "/**\n * 更新时间（unix时间戳）\n */\n",
               "excerptTokens": [
                 {
@@ -889,7 +889,7 @@
         },
         {
           "kind": "Class",
-          "canonicalReference": "yapi-api-generator!YapiGenerator:class",
+          "canonicalReference": "yapi-api-code-generator!YapiGenerator:class",
           "docComment": "",
           "excerptTokens": [
             {
@@ -905,7 +905,7 @@
           "members": [
             {
               "kind": "Constructor",
-              "canonicalReference": "yapi-api-generator!YapiGenerator:constructor(1)",
+              "canonicalReference": "yapi-api-code-generator!YapiGenerator:constructor(1)",
               "docComment": "/**\n * Constructs a new instance of the `YapiGenerator` class\n */\n",
               "excerptTokens": [
                 {
@@ -915,7 +915,7 @@
                 {
                   "kind": "Reference",
                   "text": "YapiGeneratorOptions",
-                  "canonicalReference": "yapi-api-generator!~YapiGeneratorOptions:interface"
+                  "canonicalReference": "yapi-api-code-generator!~YapiGeneratorOptions:interface"
                 },
                 {
                   "kind": "Content",
@@ -938,7 +938,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "yapi-api-generator!YapiGenerator#fetchApiList:member(1)",
+              "canonicalReference": "yapi-api-code-generator!YapiGenerator#fetchApiList:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -974,7 +974,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "yapi-api-generator!YapiGenerator#generateApiMethods:member(1)",
+              "canonicalReference": "yapi-api-code-generator!YapiGenerator#generateApiMethods:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -984,7 +984,7 @@
                 {
                   "kind": "Reference",
                   "text": "ApiInterface",
-                  "canonicalReference": "yapi-api-generator!ApiInterface:interface"
+                  "canonicalReference": "yapi-api-code-generator!ApiInterface:interface"
                 },
                 {
                   "kind": "Content",
@@ -1032,7 +1032,7 @@
             },
             {
               "kind": "Method",
-              "canonicalReference": "yapi-api-generator!YapiGenerator#generateCode:member(1)",
+              "canonicalReference": "yapi-api-code-generator!YapiGenerator#generateCode:member(1)",
               "docComment": "",
               "excerptTokens": [
                 {
@@ -1051,7 +1051,7 @@
                 {
                   "kind": "Reference",
                   "text": "Category",
-                  "canonicalReference": "yapi-api-generator!~Category:interface"
+                  "canonicalReference": "yapi-api-code-generator!~Category:interface"
                 },
                 {
                   "kind": "Content",

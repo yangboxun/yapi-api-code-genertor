@@ -3,7 +3,7 @@
     "mainEntryPointFilePath": "./dist/index.d.ts",
     "dtsRollup": {
       "enabled": true,
-      "untrimmedFilePath": "./dist/yapi-api-generator.d.ts"
+      "untrimmedFilePath": "./dist/yapi-api-code-generator.d.ts"
     },
     "apiReport": {
       "enabled": true,

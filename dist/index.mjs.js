@@ -335,6 +335,4 @@ class YapiGenerator {
     }
 }
 
-console.log('123121231231212313a');
-
 export { YapiGenerator };
