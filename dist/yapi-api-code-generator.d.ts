@@ -1,3 +1,21 @@
+export declare class ApiGenerator {
+    private opts;
+    constructor(opts: ApiGeneratorOptions);
+    fetchApiList(): Promise<any>;
+    generateApiMethods(apiList: ApiInterface[]): Promise<{
+        codes: string;
+        tsTypes: string;
+    }>;
+    generateCode(): Promise<Category[] | undefined>;
+}
+
+declare interface ApiGeneratorOptions {
+    baseUrl: string;
+    token: string;
+    targetLanguage: string;
+    apiTemplate?: string;
+}
+
 export declare interface ApiInterface {
     /** 接口 ID */
     _id: number;
@@ -187,24 +205,6 @@ declare enum ResponseBodyType {
     xml = "xml",
     /** 原始数据 */
     raw = "raw"
-}
-
-export declare class YapiGenerator {
-    private opts;
-    constructor(opts: YapiGeneratorOptions);
-    fetchApiList(): Promise<any>;
-    generateApiMethods(apiList: ApiInterface[]): Promise<{
-        codes: string;
-        tsTypes: string;
-    }>;
-    generateCode(): Promise<Category[] | undefined>;
-}
-
-declare interface YapiGeneratorOptions {
-    baseUrl: string;
-    token: string;
-    targetLanguage: string;
-    apiTemplate?: string;
 }
 
 export { }

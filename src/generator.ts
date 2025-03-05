@@ -10,18 +10,18 @@ import {
   convertToJsonSchema
 } from './utils'
 
-interface YapiGeneratorOptions {
+interface ApiGeneratorOptions {
   baseUrl: string,
   token: string,
   targetLanguage: string,
   apiTemplate?: string
 }
 
-class YapiGenerator {
+class ApiGenerator {
 
-  private opts: YapiGeneratorOptions
+  private opts: ApiGeneratorOptions
 
-  constructor(opts: YapiGeneratorOptions){
+  constructor(opts: ApiGeneratorOptions){
     this.opts = opts
   }
 
@@ -198,4 +198,4 @@ class YapiGenerator {
   }
 }
 
-export default YapiGenerator
+export default ApiGenerator

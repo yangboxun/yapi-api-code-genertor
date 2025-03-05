@@ -177,7 +177,7 @@ const convertToJsonSchema = (reqBodyForm) => {
     return schema;
 };
 
-class YapiGenerator {
+class ApiGenerator {
     constructor(opts) {
         this.opts = opts;
     }
@@ -337,4 +337,4 @@ class YapiGenerator {
     }
 }
 
-exports.YapiGenerator = YapiGenerator;
+exports.ApiGenerator = ApiGenerator;

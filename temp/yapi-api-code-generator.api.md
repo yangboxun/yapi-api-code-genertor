@@ -5,6 +5,23 @@
 ```ts
 
 // @public (undocumented)
+export class ApiGenerator {
+    // Warning: (ae-forgotten-export) The symbol "ApiGeneratorOptions" needs to be exported by the entry point index.d.ts
+    constructor(opts: ApiGeneratorOptions);
+    // (undocumented)
+    fetchApiList(): Promise<any>;
+    // (undocumented)
+    generateApiMethods(apiList: ApiInterface[]): Promise<{
+        codes: string;
+        tsTypes: string;
+    }>;
+    // Warning: (ae-forgotten-export) The symbol "Category" needs to be exported by the entry point index.d.ts
+    //
+    // (undocumented)
+    generateCode(): Promise<Category[] | undefined>;
+}
+
+// @public (undocumented)
 export interface ApiInterface {
     // (undocumented)
     [key: string]: any;
@@ -42,23 +59,6 @@ export interface ApiInterface {
     title: string;
     uid: number;
     up_time: number;
-}
-
-// @public (undocumented)
-export class YapiGenerator {
-    // Warning: (ae-forgotten-export) The symbol "YapiGeneratorOptions" needs to be exported by the entry point index.d.ts
-    constructor(opts: YapiGeneratorOptions);
-    // (undocumented)
-    fetchApiList(): Promise<any>;
-    // (undocumented)
-    generateApiMethods(apiList: ApiInterface[]): Promise<{
-        codes: string;
-        tsTypes: string;
-    }>;
-    // Warning: (ae-forgotten-export) The symbol "Category" needs to be exported by the entry point index.d.ts
-    //
-    // (undocumented)
-    generateCode(): Promise<Category[] | undefined>;
 }
 
 // Warnings were encountered during analysis:

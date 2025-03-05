@@ -1,13 +1,13 @@
 import { ApiInterface, Category } from './types';
-interface YapiGeneratorOptions {
+interface ApiGeneratorOptions {
     baseUrl: string;
     token: string;
     targetLanguage: string;
     apiTemplate?: string;
 }
-declare class YapiGenerator {
+declare class ApiGenerator {
     private opts;
-    constructor(opts: YapiGeneratorOptions);
+    constructor(opts: ApiGeneratorOptions);
     fetchApiList(): Promise<any>;
     generateApiMethods(apiList: ApiInterface[]): Promise<{
         codes: string;
@@ -15,4 +15,4 @@ declare class YapiGenerator {
     }>;
     generateCode(): Promise<Category[] | undefined>;
 }
-export default YapiGenerator;
+export default ApiGenerator;

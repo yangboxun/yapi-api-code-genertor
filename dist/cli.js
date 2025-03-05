@@ -23339,7 +23339,7 @@ const convertToJsonSchema = (reqBodyForm) => {
     return schema;
 };
 
-class YapiGenerator {
+class ApiGenerator {
     constructor(opts) {
         this.opts = opts;
     }
@@ -23552,7 +23552,7 @@ program
         fs$a.mkdirSync(outputDir, { recursive: true });
     }
     try {
-        const generator = new YapiGenerator({
+        const generator = new ApiGenerator({
             baseUrl: config.baseUrl,
             token: config.token,
             targetLanguage: config.targetLanguage,

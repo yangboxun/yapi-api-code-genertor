@@ -1,7 +1,7 @@
 export { ApiInterface } from './types';
-import YapiGenerator from './generator'
+import ApiGenerator from './generator'
 export {
-  YapiGenerator
+  ApiGenerator
 }
 
 

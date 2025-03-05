@@ -173,6 +173,197 @@
       "preserveMemberOrder": false,
       "members": [
         {
+          "kind": "Class",
+          "canonicalReference": "yapi-api-code-generator!ApiGenerator:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare class ApiGenerator "
+            }
+          ],
+          "fileUrlPath": "dist/generator.d.ts",
+          "releaseTag": "Public",
+          "isAbstract": false,
+          "name": "ApiGenerator",
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "yapi-api-code-generator!ApiGenerator:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `ApiGenerator` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(opts: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ApiGeneratorOptions",
+                  "canonicalReference": "yapi-api-code-generator!~ApiGeneratorOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "opts",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "yapi-api-code-generator!ApiGenerator#fetchApiList:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fetchApiList(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<any>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "fetchApiList"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "yapi-api-code-generator!ApiGenerator#generateApiMethods:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "generateApiMethods(apiList: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ApiInterface",
+                  "canonicalReference": "yapi-api-code-generator!ApiInterface:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<{\n        codes: string;\n        tsTypes: string;\n    }>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "apiList",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "generateApiMethods"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "yapi-api-code-generator!ApiGenerator#generateCode:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "generateCode(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Category",
+                  "canonicalReference": "yapi-api-code-generator!~Category:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[] | undefined>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "generateCode"
+            }
+          ],
+          "implementsTokenRanges": []
+        },
+        {
           "kind": "Interface",
           "canonicalReference": "yapi-api-code-generator!ApiInterface:interface",
           "docComment": "",
@@ -886,197 +1077,6 @@
             }
           ],
           "extendsTokenRanges": []
-        },
-        {
-          "kind": "Class",
-          "canonicalReference": "yapi-api-code-generator!YapiGenerator:class",
-          "docComment": "",
-          "excerptTokens": [
-            {
-              "kind": "Content",
-              "text": "declare class YapiGenerator "
-            }
-          ],
-          "fileUrlPath": "dist/generator.d.ts",
-          "releaseTag": "Public",
-          "isAbstract": false,
-          "name": "YapiGenerator",
-          "preserveMemberOrder": false,
-          "members": [
-            {
-              "kind": "Constructor",
-              "canonicalReference": "yapi-api-code-generator!YapiGenerator:constructor(1)",
-              "docComment": "/**\n * Constructs a new instance of the `YapiGenerator` class\n */\n",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "constructor(opts: "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "YapiGeneratorOptions",
-                  "canonicalReference": "yapi-api-code-generator!~YapiGeneratorOptions:interface"
-                },
-                {
-                  "kind": "Content",
-                  "text": ");"
-                }
-              ],
-              "releaseTag": "Public",
-              "isProtected": false,
-              "overloadIndex": 1,
-              "parameters": [
-                {
-                  "parameterName": "opts",
-                  "parameterTypeTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 2
-                  },
-                  "isOptional": false
-                }
-              ]
-            },
-            {
-              "kind": "Method",
-              "canonicalReference": "yapi-api-code-generator!YapiGenerator#fetchApiList:member(1)",
-              "docComment": "",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "fetchApiList(): "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "Promise",
-                  "canonicalReference": "!Promise:interface"
-                },
-                {
-                  "kind": "Content",
-                  "text": "<any>"
-                },
-                {
-                  "kind": "Content",
-                  "text": ";"
-                }
-              ],
-              "isStatic": false,
-              "returnTypeTokenRange": {
-                "startIndex": 1,
-                "endIndex": 3
-              },
-              "releaseTag": "Public",
-              "isProtected": false,
-              "overloadIndex": 1,
-              "parameters": [],
-              "isOptional": false,
-              "isAbstract": false,
-              "name": "fetchApiList"
-            },
-            {
-              "kind": "Method",
-              "canonicalReference": "yapi-api-code-generator!YapiGenerator#generateApiMethods:member(1)",
-              "docComment": "",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "generateApiMethods(apiList: "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "ApiInterface",
-                  "canonicalReference": "yapi-api-code-generator!ApiInterface:interface"
-                },
-                {
-                  "kind": "Content",
-                  "text": "[]"
-                },
-                {
-                  "kind": "Content",
-                  "text": "): "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "Promise",
-                  "canonicalReference": "!Promise:interface"
-                },
-                {
-                  "kind": "Content",
-                  "text": "<{\n        codes: string;\n        tsTypes: string;\n    }>"
-                },
-                {
-                  "kind": "Content",
-                  "text": ";"
-                }
-              ],
-              "isStatic": false,
-              "returnTypeTokenRange": {
-                "startIndex": 4,
-                "endIndex": 6
-              },
-              "releaseTag": "Public",
-              "isProtected": false,
-              "overloadIndex": 1,
-              "parameters": [
-                {
-                  "parameterName": "apiList",
-                  "parameterTypeTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 3
-                  },
-                  "isOptional": false
-                }
-              ],
-              "isOptional": false,
-              "isAbstract": false,
-              "name": "generateApiMethods"
-            },
-            {
-              "kind": "Method",
-              "canonicalReference": "yapi-api-code-generator!YapiGenerator#generateCode:member(1)",
-              "docComment": "",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "generateCode(): "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "Promise",
-                  "canonicalReference": "!Promise:interface"
-                },
-                {
-                  "kind": "Content",
-                  "text": "<"
-                },
-                {
-                  "kind": "Reference",
-                  "text": "Category",
-                  "canonicalReference": "yapi-api-code-generator!~Category:interface"
-                },
-                {
-                  "kind": "Content",
-                  "text": "[] | undefined>"
-                },
-                {
-                  "kind": "Content",
-                  "text": ";"
-                }
-              ],
-              "isStatic": false,
-              "returnTypeTokenRange": {
-                "startIndex": 1,
-                "endIndex": 5
-              },
-              "releaseTag": "Public",
-              "isProtected": false,
-              "overloadIndex": 1,
-              "parameters": [],
-              "isOptional": false,
-              "isAbstract": false,
-              "name": "generateCode"
-            }
-          ],
-          "implementsTokenRanges": []
         }
       ]
     }
