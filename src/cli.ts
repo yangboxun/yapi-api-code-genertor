@@ -85,7 +85,7 @@ program
       for (const category of result) {
         if (category._apiCodes) {
           apiCode += category._apiCodes.codes + '\n\n';
-          if (config.targetLanguage === 'javascript') {
+          if (config.targetLanguage === 'typescript') {
             typeCode += category._apiCodes.tsTypes + '\n\n';
           }
         }
