@@ -1,6 +1,6 @@
 {
   "name": "yapi-api-code-generator",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "main": "dist/index.cjs.js",
   "module": "dist/index.mjs.js",
   "bin": {
